@@ -1,0 +1,40 @@
+header {
+  height: 60px;
+  padding: 0 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #3d3836;
+  color: #fff;
+
+  .add-load {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      padding: 0 0.5rem;
+    }
+
+    .add-icon {
+      transition: all 0.3s ease-in-out;
+    }
+    .x-style {
+      transform: rotate(135deg);
+    }
+  }
+  #logo {
+    color: #fff281;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    padding: 0 3rem;
+    .add-load {
+      display: none;
+    }
+  }
+}

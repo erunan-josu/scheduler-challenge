@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import Header from './components/Header'
+/* import DatePicker from 'react-datepicker' */
+import Footer from './components/Footer'
+import SchedulerApp from './components/SchedulerApp'
 
 function App() {
+  const [formVisible, setFormVisible] = useState(true)
+  const formHandler = () => {
+    setFormVisible(!formVisible)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header formHandler={formHandler} formVisible={formVisible} />
+      <SchedulerApp formVisible={formVisible} />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

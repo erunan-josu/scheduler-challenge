@@ -1,0 +1,15 @@
+.app-container {
+  width: 100%;
+  min-height: calc(100vh - 110px);
+  background: #f3f3f3;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .app-container {
+    flex-direction: column-reverse;
+  }
+}
