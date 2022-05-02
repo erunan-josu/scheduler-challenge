@@ -13,7 +13,7 @@ const AppContextProvider = ({ children }) => {
       end: new Date(2022, 3, 29),
     },
     {
-      title: 'nooob meeting',
+      title: 'Trip 1 to Rome',
       allDay: true,
       start: new Date(2022, 4, 1),
       end: new Date(2022, 4, 5),
